@@ -52,3 +52,4 @@ secrets.json
 # --- Azure specific ---
 .local/
 .azure/
+az-sp-secrets.json
