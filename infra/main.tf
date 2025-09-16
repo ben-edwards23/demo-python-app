@@ -62,7 +62,6 @@ resource "azurerm_linux_web_app" "web" {
   service_plan_id     = azurerm_service_plan.plan.id
   https_only          = true
   tags                = local.tags
-  site_config { always_on = false }
 
   identity {
     type = "SystemAssigned"
@@ -73,6 +72,7 @@ resource "azurerm_linux_web_app" "web" {
     application_stack {
       python_version = "3.12"
     }
+    always_on = false
   }
 
   app_settings = {
