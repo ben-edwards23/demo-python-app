@@ -1,0 +1,5 @@
+location             = "uksouth"
+name_prefix          = "bedwdemopythonapp"
+resource_group_name  = "demo-python-app-rg"
+plan_sku             = "F1"
+acr_sku              = "Standard"
