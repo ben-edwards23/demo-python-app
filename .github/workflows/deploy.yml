@@ -34,8 +34,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
           
       - name: Configure app settings (WEBSITES_PORT)
         run: |
