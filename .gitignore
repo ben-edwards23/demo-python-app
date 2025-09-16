@@ -1,0 +1,54 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+*.egg
+*.log
+.env
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+
+# --- Virtual environment ---
+/opt/venv/
+pip-wheel-metadata/
+
+# --- Docker ---
+*.pid
+*.seed
+*.cover
+*.DS_Store
+.dockerignore
+docker-compose.override.yml
+
+# --- VS Code / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- GitHub Actions cache ---
+*.bak
+*.tmp
+
+# --- OS files ---
+Thumbs.db
+.DS_Store
+
+# --- Sensitive files ---
+*.key
+*.pem
+*.crt
+*.secret
+secrets.json
+
+# --- Azure specific ---
+.local/
+.azure/
