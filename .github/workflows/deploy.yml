@@ -78,8 +78,8 @@ jobs:
           az webapp config container set \
             -g "${{ secrets.AZ_RESOURCE_GROUP }}" \
             -n "${{ secrets.AZ_WEBAPP_NAME }}" \
-            --docker-custom-image-name "${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}" \
-            --docker-registry-server-url "https://${{ steps.acr.outputs.login_server }}"          
+            --container-image-name "${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}" \
+            --container-registry-url "https://${{ steps.acr.outputs.login_server }}"          
 
       - name: Restart Web App
         run: az webapp restart -g "${{ secrets.AZ_RESOURCE_GROUP }}" -n "${{ secrets.AZ_WEBAPP_NAME }}"
