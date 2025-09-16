@@ -73,6 +73,7 @@ resource "azurerm_linux_web_app" "web" {
       python_version = "3.12"
     }
     always_on = false
+    container_registry_use_managed_identity = true
   }
 
   app_settings = {
