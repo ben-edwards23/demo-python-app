@@ -22,7 +22,7 @@ variable "webapp_name" {
 
 variable "acr_name" {
   type        = string
-  description = "Explicit ACR name (must be globally unique, optional)"
+  description = "Explicit ACR name (must be globally unique (optional) )"
   default     = ""
 }
 
