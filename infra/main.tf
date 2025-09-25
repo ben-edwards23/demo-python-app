@@ -18,7 +18,7 @@ provider "azurerm" {
   features {}
 }
 
-# ---- Naming conveniences ----
+# ---- Naming conventions ----
 locals {
   rg_name     = var.resource_group_name
   plan_name   = "${var.name_prefix}-plan"

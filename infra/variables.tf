@@ -6,7 +6,7 @@ variable "location" {
 
 variable "name_prefix" {
   type        = string
-  description = "Short prefix for resource names (e.g., benflask01)"
+  description = "Short prefix for resource names (e.g., bedw-)"
 }
 
 variable "resource_group_name" {
