@@ -48,6 +48,7 @@ Thumbs.db
 *.crt
 *.secret
 secrets.json
+.secrets
 
 # --- Azure specific ---
 .local/
